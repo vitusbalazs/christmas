@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>xmascountdown.tk</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="settings.js"></script>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <div class="icons">
+        <div id="settings-icon" onclick="showSettings();"><i class="fa fa-sleigh"></i></div>
+    </div>
+
+    <div class="container col-12">
+        <div class="title">Christmas Countdown</div>
+        <div class="Nums">
+            <div class="firstNum">
+                <div class="numPart"><div id="num1" class="num">∞</div><div class="text-brown">days</div></div>
+                <div class="numPart"><div id="num2" class="num">∞</div><div class="text-brown">hours</div></div>
+            </div>
+            <div class="secondNum">
+                <div class="numPart"><div id="num3" class="num">∞</div><div class="text-brown">minutes</div></div>
+                <div class="numPart"><div id="num4" class="num">∞</div><div class="text-brown">seconds</div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+</html>
