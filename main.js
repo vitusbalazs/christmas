@@ -25,15 +25,32 @@ function updateDate()
 
 let timer = setInterval(updateDate, 1000);
 
+function getRandom(first, last) {
+    return Math.floor(Math.random() * (last - first + 1) + first) - 1;
+}
+
+const backgrounds = [
+    "1.png",
+    "2.jpg",
+]
+const l1 = backgrounds.length;
+
+const mobile_backgrounds = [
+    "1.jpg",
+    "2.jpg",
+    "3.png",
+]
+const l2 = mobile_backgrounds.length;
+
 let sw = screen.width;
 
 if (sw > 0 && sw <= 400) {
     // phone bg
-    document.body.style.backgroundImage = "url('assets/mobile-backgrounds/1.jpg')";
+    document.body.style.backgroundImage = `url('assets/mobile-backgrounds/${mobile_backgrounds[getRandom(1, l2)]}')`;
 } else if (sw > 400 && sw <= 900) {
     // tablet bg
-    document.body.style.backgroundImage = "url('assets/mobile-backgrounds/1.jpg')";
+    document.body.style.backgroundImage = `url('assets/mobile-backgrounds/${mobile_backgrounds[getRandom(1, l2)]}')`;
 } else {
-    // big backg
-    document.body.style.backgroundImage = "url('assets/backgrounds/1.png')";
+    // PC backg
+    document.body.style.backgroundImage = `url('assets/backgrounds/${backgrounds[getRandom(1, l1)]}')`;
 }
