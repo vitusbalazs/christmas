@@ -7,7 +7,7 @@ function updateDate()
 
     if (now > endDate) {
         // it's over
-        document.getElementById('countdownDiv').innerText = 'Éééés le is telt a visszaszámlálás, ma végre újra találkozunk 🤍';
+        document.getElementById('countdownDiv').innerText = 'Merry Christmas 🤍';
         clearInterval(timer);
         return;
     }
