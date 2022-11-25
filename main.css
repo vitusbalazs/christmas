@@ -12,10 +12,13 @@ body {
     background-attachment: fixed;
 
     font-family: 'Grinched-Regular';
-
     text-shadow: 0px 0px 10px black;
-
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @font-face {
@@ -26,33 +29,6 @@ body {
         url('assets/fonts/Grinched-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
-}
-
-.settingsMenu {
-    position: fixed;
-    background-color: black;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* icons */
-
-.icons {
-    text-shadow: none;
-    color: white;
-    position: fixed;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(60, 60, 60, 0.75);
-    border-radius: 10px;
-    right: 5px;
-    top: 5px;
-}
-
-.icons > * {
-    margin: 5px;
 }
 
 /* container */
@@ -90,6 +66,21 @@ body {
     margin: 2rem;
 }
 
+/* floating window */
+
+.floating {
+    border-left: 5px solid sandybrown;
+    border-radius: 10px;
+
+    font-size: 2rem;
+
+    padding-left: 10px;
+}
+
+.floating > * {
+    margin: 0px;
+}
+
 /* Screen sizes */
 
 @media (max-width: 900px) {
@@ -100,9 +91,6 @@ body {
 
     .Nums {
         font-size: 3rem;
-    }
-
-    .firstNum, .secondNum {
         flex-direction: column;
     }
 }
@@ -115,14 +103,11 @@ body {
 
     .Nums {
         font-size: 2rem;
+        flex-direction: column;
     }
 
     .numPart {
         margin: 1rem;
-    }
-
-    .firstNum, .secondNum {
-        flex-direction: column;
     }
 }
 
@@ -134,7 +119,17 @@ body {
     color: sandybrown;
 }
 
+.text-black {
+    color: black;
+}
 
+.background-brown {
+    background-color: sandybrown;
+}
+
+.background-white {
+    background-color: aliceblue;
+}
 
 
 
